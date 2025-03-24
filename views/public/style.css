@@ -1,0 +1,1621 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/hywenhei');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+/* @import url('https://fonts.cdnfonts.com/css/nexa-bold'); */
+
+@font-face {
+    font-family: "Nexa";
+    font-style: normal;
+    font-weight: 700;
+    src: local('Nexa'),
+    url(https://fonts.cdnfonts.com/s/16221/NexaBold.woff) format('woff')
+}
+
+:root
+{
+    --ui-scale: 0.7;
+    --font: "Red Hat Display";
+}
+
+/* button
+{
+    display: grid;
+    place-items: center;
+} */
+
+[data-tip] {
+	position:relative;
+
+}
+[data-tip]:before {
+	content:'';
+	/* hides the tooltip when not hovered */
+	display:none;
+	content:'';
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	border-bottom: 5px solid #1a1a1a;	
+	position:absolute;
+	top:30px;
+	left:35px;
+	z-index:8;
+	font-size:0;
+	line-height:0;
+	width:0;
+	height:0;
+}
+[data-tip]:after {
+	display:none;
+	content:attr(data-tip);
+	position:absolute;
+	top:35px;
+	left:0px;
+	padding:5px 8px;
+	background:#1a1a1a;
+	color:#fff;
+	z-index:9;
+	font-size: 0.75em;
+	height:18px;
+	line-height:18px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	white-space:nowrap;
+	word-wrap:normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+	display:block;
+}
+
+input
+{
+    color: black;
+    font-size: 16px;
+}
+
+span, h1, h2, h3, p {
+    text-shadow: black -1px -1px 0px, black -1px -0.333333px 0px, black -1px 0.333333px 0px, black -1px 1px 0px, black -0.333333px -1px 0px, black -0.333333px -0.333333px 0px, black -0.333333px 0.333333px 0px, black -0.333333px 1px 0px, black 0.333333px -1px 0px, black 0.333333px -0.333333px 0px, black 0.333333px 0.333333px 0px, black 0.333333px 1px 0px, black 1px -1px 0px, black 1px -0.333333px 0px, black 1px 0.333333px 0px, black 1px 1px 0px;
+}
+
+input::-webkit-calendar-picker-indicator {
+    display: none;
+}
+/* For Firefox */
+input[type="text"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    /* remove padding and border in Firefox */
+    padding: 0;
+    border: none;
+}
+
+*
+{
+    font-family: var(--font), sans-serif;
+    color: white;
+    overflow: hidden;
+    user-select: none;
+}
+
+#chat-input {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, calc(50% - 100px));
+    color: white;
+    text-shadow: black -1px -1px 0px, black -1px -0.333333px 0px, black -1px 0.333333px 0px, black -1px 1px 0px, black -0.333333px -1px 0px, black -0.333333px -0.333333px 0px, black -0.333333px 0.333333px 0px, black -0.333333px 1px 0px, black 0.333333px -1px 0px, black 0.333333px -0.333333px 0px, black 0.333333px 0.333333px 0px, black 0.333333px 1px 0px, black 1px -1px 0px, black 1px -0.333333px 0px, black 1px 0.333333px 0px, black 1px 1px 0px;
+    display: none;
+    text-align: center;
+}
+
+button
+{
+    /* text-shadow:
+        1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; */
+    text-shadow: black -1px -1px 0px, black -1px -0.333333px 0px, black -1px 0.333333px 0px, black -1px 1px 0px, black -0.333333px -1px 0px, black -0.333333px -0.333333px 0px, black -0.333333px 0.333333px 0px, black -0.333333px 1px 0px, black 0.333333px -1px 0px, black 0.333333px -0.333333px 0px, black 0.333333px 0.333333px 0px, black 0.333333px 1px 0px, black 1px -1px 0px, black 1px -0.333333px 0px, black 1px 0.333333px 0px, black 1px 1px 0px;
+    transition: all 0.3s ease;
+}
+
+button:hover
+{
+    filter: brightness(80%);
+}
+
+h1
+{
+    margin: 0;
+}
+
+body
+{
+    color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.ui-autocomplete
+{
+    max-height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.container.show
+{
+    animation: visibility 1.5s ease-in-out;
+    visibility: visible;
+    opacity: 1;
+}
+
+.container
+{
+    height: 100%;
+    width: 100%;
+    animation: invisibility 0.25s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@keyframes invisibility
+{
+    from {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes visibility
+{
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+canvas 
+{
+    position: absolute;
+    cursor: default;
+    -webkit-tap-highlight-color: transparent;
+    height: 100%;
+    width: 100%;
+
+    /* z-index: -1; */
+}
+
+#canvas
+{
+    inset: 0;
+}
+
+.close-button {
+    background-color: #F14B41;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    /* width: 30px; */
+    height: 30px;
+    text-align: center;
+}
+
+.notice {
+    padding: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    max-width: 200px;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    text-shadow: black -1px -1px 0px, black -1px -0.333333px 0px, black -1px 0.333333px 0px, black -1px 1px 0px, black -0.333333px -1px 0px, black -0.333333px -0.333333px 0px, black -0.333333px 0.333333px 0px, black -0.333333px 1px 0px, black 0.333333px -1px 0px, black 0.333333px -0.333333px 0px, black 0.333333px 0.333333px 0px, black 0.333333px 1px 0px, black 1px -1px 0px, black 1px -0.333333px 0px, black 1px 0.333333px 0px, black 1px 1px 0px;
+}
+
+@keyframes hue-rotate-animation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#minimap_canvas
+{
+    position: absolute;
+    display: none;
+    width: calc(150px * var(--ui-scale));
+    height: calc(150px * var(--ui-scale));
+    left: 15px;
+    bottom: 15px;
+    /* z-index: 1; */
+    background: rgba(50, 50, 50, 0.5);
+    border: calc(5px * var(--ui-scale)) solid #121121;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#regions /** top middle */
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.region
+{
+    font-size: 16px;
+    border-radius: 5px;
+    height: 30px;
+    width: 120px;
+    /* backdrop-filter: blur(10px); */
+    transition: all 0.3s ease;
+    filter: brightness(100%);
+    padding: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#score_canvas
+{
+    position: absolute;
+    width: calc(500px * var(--ui-scale));
+    height: calc(200px  * var(--ui-scale));
+    left: calc(25px + 150px * var(--ui-scale));
+    bottom: 0;
+    opacity: 0.8;
+    /* z-index: 1; */
+}
+
+#stats_canvas {
+    position: fixed;
+    width: calc(350px * var(--ui-scale));
+    height: calc(350px * var(--ui-scale));
+    bottom: 15px;
+    right: 15px;
+    /* z-index: 1; */
+    opacity: 0.8;
+}
+
+#upgrades_canvas
+{
+    position: absolute;
+    width: calc(300px * var(--ui-scale));
+    height: calc(365px * var(--ui-scale));
+    right: 15px;
+    top: 15px;
+    /* z-index: 1; */
+    opacity: 0.9;
+}
+
+#scoreboard_canvas
+{
+    position: absolute;
+    width: calc(300px * var(--ui-scale));
+    height: calc(350px * var(--ui-scale));
+    top: 15px;
+    left: 15px;
+    /* z-index: 1; */
+    opacity: 0.9;
+}
+
+.top-left
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    min-height: calc(350px * var(--ui-scale));
+    /* z-index: 1; */
+}
+
+#game-buttons
+{
+    display: none;
+    margin-left: calc(350px * var(--ui-scale));
+    gap: 4px;
+}
+
+ul 
+{
+    list-style: none
+}
+
+li::before
+{
+    content: "•"; 
+    color: white;
+    display: inline-block; 
+    width: 1em;
+}
+
+.disconnected-elements
+{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    overflow: visible !important;
+    display: flex;
+    flex-direction: column;
+}
+
+#game-title {
+    font-size: 6em;
+    font-weight: 700;
+    color: white;
+    position: absolute;
+    text-align: center;
+    animation: move 1.5s;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@keyframes move {
+    from {
+        bottom: 100%;
+    }
+
+    to {
+        bottom: 70%;
+    }
+}
+
+#disconnected-title
+{
+    font-size: 6em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+#disconnected-message
+{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.connected-elements
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.play-1v1, .play-scoring
+{
+    padding-top: 12px;
+    overflow: visible !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mode-container
+{
+    font-size: 16px;
+    border-radius: 5px;
+    width: 500px;
+    padding: 4px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mode-button /** equally divided inside flexbox, some space between each button */
+{
+    font-size: 16px;
+    border-radius: 5px;
+    width: 40%;
+    height: 32px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    margin-bottom: 5px;
+}
+
+.mode-button.selected /** equally divided inside flexbox, some space between each button */
+{
+    background-color: #D36827;
+    /* box-shadow: 0px 0px 10px rgba(211, 104, 39, 0.5); */
+}
+
+#server-buttons
+{
+    font-size: 16px;
+    border-radius: 5px;
+    width: 95%;
+    /* height: 20%; */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    margin-bottom: 5px;
+    /* padding-left: 20%; */
+    /* padding-right: 20%; */
+    /* position: absolute; */
+}
+
+#server-justifier
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+
+#servers, #teams
+{
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.4);
+    width: 95%;
+    max-height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    overflow-y: scroll;
+    border: 3px solid rgba(0, 0, 0, 0.4);
+}
+
+#new_server
+{
+    background-color: #42F15C;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+#disconnect_server
+{
+    background-color: #fd4221;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+
+#copy_link
+{
+    background-color: #ffdd00;
+    border-radius: 5px;
+    font-size: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+#server-entry
+{
+    display: flex;
+    justify-content: space-around;
+    min-height: 20px;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+
+#server-entry span
+{
+    text-align: center;
+    cursor: pointer;
+}
+
+#server-entry.selected > span
+{
+    color: #D36827 !important;
+}
+
+#set, .teambox
+{
+    position: relative;
+    height: 100px;
+    width: 400px;
+    padding: 0 5px;
+    font-size: 9pt;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-block: 1px;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.teambox.selected
+{
+    border: 1px solid #42F15C;
+}
+
+.teambox-icons
+{
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    z-index: 1;
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    /* backdrop-filter: blur(4px); */
+    transition: all 0.3s ease;
+    animation: backdropFadeIn 0.3s ease forwards;
+}
+
+.teambox-icon
+{
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); */
+    /* backdrop-filter: blur(10px); */
+    font-size: 1.75em;
+    font-weight: normal;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    padding-bottom: 0px;
+    z-index: 10;
+}
+
+.teambox-icon svg
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#teambox-select
+{
+    background-color: #42F15C;
+}
+
+#teambox-select:hover
+{
+    /* box-shadow: #42F15C 0px 0px 10px; */
+}
+
+#teambox-delete
+{
+    background-color: rgb(252, 67, 67);
+}
+
+#teambox-delete:hover
+{
+    /* box-shadow: rgb(252, 67, 67) 0px 0px 10px; */
+}
+
+#teambox-edit
+{
+    background-color: gray;
+}
+
+#teambox-edit:hover
+{
+    /* box-shadow: gray 0px 0px 10px; */
+}
+
+.teambox b, #set b
+{
+    margin-top: 5px;
+    display: block;
+    font-size: 12pt;
+    text-align: center;
+}
+
+#name
+{
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+    height: 25px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-style: none;
+    border-radius: 5px; /* Rounded corners */
+    /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); */
+    z-index: 1;
+    transition: all 0.3s ease;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+#name:hover 
+{
+    /* box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.4); */
+    cursor: text !important;
+}
+
+#name:focus
+{
+    outline: none;
+}
+
+.play-with
+{
+    font-size: 16px;
+    border-radius: 5px;
+    height: 30px;
+    width: 250px;
+    /* backdrop-filter: blur(10px); */
+    transition: all 0.3s ease;
+    padding: 2px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.stroke
+{
+    /* text-shadow:
+        1px 1px 0 #000,
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000; */
+    
+    text-shadow: black -1px -1px 0px, black -1px -0.333333px 0px, black -1px 0.333333px 0px, black -1px 1px 0px, black -0.333333px -1px 0px, black -0.333333px -0.333333px 0px, black -0.333333px 0.333333px 0px, black -0.333333px 1px 0px, black 0.333333px -1px 0px, black 0.333333px -0.333333px 0px, black 0.333333px 0.333333px 0px, black 0.333333px 1px 0px, black 1px -1px 0px, black 1px -0.333333px 0px, black 1px 0.333333px 0px, black 1px 1px 0px;
+}
+
+
+#utils-menu
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(0, 0);
+    padding: 10px;
+}
+
+#social-media-menu
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(0, 0);
+    padding: 10px;
+}
+
+.menu-item
+{
+    display: inline-block;
+    margin: 5px;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    /* box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2); */
+    /* backdrop-filter: blur(10px); */
+    font-size: 1.75em;
+    font-weight: normal;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    padding-bottom: 0px;
+    z-index: 10;
+}
+
+.menu-item svg
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#discord
+{
+    background-color: #7289DA;
+}
+
+#discord:hover
+{
+    /* box-shadow: #7289DA 0px 0px 10px; */
+    cursor: pointer;
+}
+
+#leaderboard
+{
+    background-color: rgb(255, 215, 0);
+}
+
+#leaderboard:hover
+{
+    /* box-shadow: rgb(249, 111, 111) 0px 0px 10px; */
+    cursor: pointer;
+}
+
+#clans:focus
+{
+    outline: none;
+}
+
+#clans:hover
+{
+    /* box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px; */
+    cursor: pointer;
+}
+
+#stats
+{
+    background-color: rgb(249, 111, 111);
+}
+
+#stats:hover
+{
+    /* box-shadow: rgb(255, 215, 0) 0px 0px 10px; */
+    cursor: pointer;
+}
+
+#changelog
+{
+    background-color: rgb(126, 247, 177);
+}
+
+#changelog:hover
+{
+    /* box-shadow: rgb(86, 241, 43) 0px 0px 10px; */
+    cursor: pointer;
+}
+
+#info
+{
+    background-color: rgb(48, 161, 254);
+}
+
+#info:hover
+{
+    /* box-shadow: rgb(48, 161, 254) 0px 0px 10px; */
+    cursor: pointer;
+}
+
+.game-button
+{
+    /* height: calc(50px * sqrt(var(--ui-scale))); */
+    /* width: calc(50px * sqrt(var(--ui-scale))); */
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: none;
+    margin: 0px;
+}
+
+#settings:hover
+{
+    /* box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 10px; */
+    cursor: pointer;
+}
+
+@keyframes pulse {
+    0%
+    {
+        /* box-shadow: 0 0 0 0px rgb(86, 241, 43, 0.4); */
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% { transform: translate(5px, -5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0deg); }
+    75% { transform: translate(-5px, -5px) rotate(-5deg); }
+    100%
+    {
+        /* box-shadow: 0 0 0 20px rgb(86, 241, 43, 0); */
+        transform: translate(0, 0) rotate(0deg);
+    }
+}
+
+.line
+{
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+#discord-modal, #modal, #clan-modal, #settings-modal, #stats-leaderboard-modal, #trophy-leaderboard-modal, #teambuilder-modal {
+    display: block;
+    opacity: 0;
+    position: fixed;
+    z-index: -2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    cursor: default;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* backdrop-filter: blur(10px); */
+    overflow-y: scroll;
+}
+
+#settings-navbar, #teambuilder-navbar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* margin-left: 25%; */
+    /* margin-right: 25%; */
+}
+
+.nav-item
+{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: red;
+    background: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    transition: all 0.3s ease;
+    padding-bottom: 0px;
+    margin-right: 20px;
+}
+
+.nav-item.selected
+{
+    border-bottom: 2px solid red;
+}
+
+#settings-body, #teambuilder-body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    /* margin-left: 25%; */
+    /* margin-right: 25%; */
+    overflow-y: scroll;
+}
+
+#discord-modal-content, #modal-content, #clan-modal-content {
+    /* position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(0, 0); */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 50%; */
+    /* transform: translate(-50%, -50%); */
+    padding: 5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: rgba(255, 255, 255, 0.1) solid 8px;
+    /* backdrop-filter: blur(10px); */
+    margin-right: 1%;
+    overflow-y: scroll;
+    margin-bottom: 12.5%;
+}
+
+#modal-content
+{
+    position: static;
+    transform: translate(0);
+}
+
+#clan-modal, #clan-modal-content
+{
+    background: transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border: none;
+}
+
+#clan-modal-content
+{
+    border-radius: 5px;
+    backdrop-filter: none;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#clan-list
+{
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+#clan-name-input
+{
+    user-select: none;
+    pointer-events: all;
+    -webkit-tap-highlight-color: transparent;
+    border: 3px solid #000;
+    padding: 0;
+    color: black;
+    font-family: inherit;
+    outline: 0;
+    width: 180px;
+    height: 35px;
+    margin-right: 4px;
+    font-size: 18px;
+    border-width: 2px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+#clan-name-input:hover 
+{
+    cursor: text !important;
+}
+
+#clan-name-input:focus
+{
+    outline: none;
+}
+
+#create-clan
+{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+#create-clan-button
+{
+    background-color: #42F15C;
+    border-radius: 5px;
+    height: 37px;
+    width: 188px;
+    font-size: 18px;
+    border-style: none;
+    transition: all 0.3s ease;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+#create-clan-button:hover
+{
+    cursor: pointer;
+}
+
+#clan-entry
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    min-height: 50px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#clan-members
+{
+    margin-right: 20px;
+}
+
+#clan-name
+{
+    margin-left: 20px;
+}
+
+#clan-join, #clan-pending
+{
+    /* margin-left: 500px; */
+    color: white;
+    overflow: hidden;
+    user-select: none;
+    background-color: #42F15C;
+    border-radius: 5px;
+    height: 25px;
+    width: 80px;
+    font-size: 12px;
+    border-style: none;
+    transition: all 0.3s ease;
+    padding: 2px;
+    text-align: center;
+}
+
+#clan-pending {
+    background-color: #e9bb06;
+}
+
+#discord-modal-header, #modal-header, #clan-modal-header {
+    padding: 2px 16px;
+    color: white;
+}
+
+#discord-modal-body, #modal-body, #clan-modal-body
+{
+    padding: 8px 8px 8px 8px;
+}
+
+#discord-modal-close, #close, #clan-close, #settings-close, #teambuilder-close, #stats-leaderboard-close, #trophy-leaderboard-close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    padding-top: 1%;
+}
+
+#discord-modal-close:hover,
+#close:hover,
+#close:focus,
+#settings-close:hover,
+#settings-close:focus,
+#clan-close:hover,
+#clan-close:focus,
+#teambuilder-close:hover,
+#teambuilder-close:focus,
+#stats-leaderboard-close:hover,
+#trophy-leaderboard-close:hover
+{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#stats-leaderboard-categories, #trophy-leaderboard-categories
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.stats-leaderboard-category, .trophy-leaderboard-category
+{
+    flex: 1 1 30%;
+    box-sizing: border-box;
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.stats-leaderboard-category:hover, .trophy-leaderboard-category:hover
+{
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.lb-category-header
+{
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+}
+
+#theme-name, #team-name
+{
+    color: black;
+    font-size: 1.5em;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+#themes, #teams-select /** <select> element */
+{
+    background-color: white;
+    color: black;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border-style: none;
+    padding: 0px;
+    text-align: center;
+}
+
+#theme-settings, #team-settings
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#theme-buttons, #config-buttons, #team-buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#theme-colors, #teambuilder-teams
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: scroll; */
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#teambuilder-teams-buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#teambuilder-teamedit-buttons
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#team-name-input
+{
+    text-align: center;
+}
+
+.team-tanks
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 700px;
+}
+
+.team-tank-entry
+{
+    display: flex;
+    justify-content: space-around;
+    min-height: 20px;
+    width: 90%;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px 5px 20px 5px;
+}
+
+.tank-name-input
+{
+    text-align: center;
+}
+
+.build-entry
+{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 5px;
+    height: 262px;
+    width: 250px;
+}
+
+.stat-entry
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 5px;
+}
+
+.stat-buttons
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 50px;
+}
+
+.progress-bar-wrapper
+{
+    height: 25px;
+    width: 80%;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.progress-bar-text
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.remove-stat
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fd4221;
+    border: none;
+}
+
+.add-stat
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #42F15C;
+    border: none;
+}
+
+#teambuilder-edit
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#config-header
+{
+    text-align: center;
+    font-size: 32px;
+    text-decoration: underline;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#config-subheader
+{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+#config-options
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* overflow: scroll; */
+    margin-top: 50px;
+    padding: 20px;
+}
+
+#color-entry, #config-entry
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+input[type='color'] {
+    width: 200%;
+    height: 200%;
+    margin: -50%;
+    outline: none;
+}
+
+.cp-wrapper {
+    overflow: hidden;
+    outline: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.entry-name
+{
+    margin-right: 10px;
+}
+
+#theme-new, #team-new, #team-add /** <button> */
+{
+    background-color: #22ff00;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 100px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+#theme-delete, #team-delete /** <button> */
+{
+    background-color: #ff0000;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 100px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding: 2px;
+    text-align: center;
+}
+
+#theme-export, #team-export, #teamedit-export
+{
+    background-color: #D36827;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 100px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding: 2px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#theme-import, #config-load, #team-import, #team-save, #teamedit-import
+{
+    background-color: #A01748;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 100px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding: 2px;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+#ranked-region
+{
+    margin-left: 5px;
+    color: black;
+}
+
+*:focus
+{
+    outline: none;
+}
+
+
+::-webkit-scrollbar {
+    height: 12px;
+    overflow: visible;
+    width: 12px;
+}
+
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-corner {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FFFFFF80;
+    border-radius: 50vw;
+    background-clip: padding-box;
+    padding: 2px;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* background-color: #A0174860; */
+    background-color: #FFFFFF60;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+button:hover
+{
+    cursor: pointer;
+    outline: none;
+}
+
+/* button:disabled
+{
+    opacity: 0.9;
+} */
+
+.disabled
+{
+    cursor: not-allowed !important;
+    border: 1px solid #999999;
+    background-color: #cccccc !important;
+    color: #666666;
+}
+
+.swal2-icon-content
+{
+    color: #3FC3EE !important;
+}
+
+.swal2-popup .swal2-styled:focus
+{
+    box-shadow: none !important;
+}
+
+button
+{
+    display: grid;
+    place-items: center;
+}
+
+[data-tooltip]:hover::after {
+    display: block;
+    position: absolute;
+    /* top: calc(100% + 10px); */
+    top: 0;
+    color: white;
+    top: 0;
+    content: attr(data-tooltip);
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+    padding: .25em;
+}
+
+input[type=checkbox]
+{
+    accent-color: #4dff00;
+}
+
+@media (width <= 768px) {
+    #server-container
+    {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(0.4);
+        position: absolute;
+    }
+    
+    .menu-item {
+        margin: 0px;
+        transform: scale(0.7);
+    }
+
+    #social-media-menu, #utils-menu {
+        padding: 0px;
+    }
+}
+
+@media (height <= 768px) {
+    #protips {
+        max-width: 100px;
+    }
+}
+
+@media (width > 768px) {
+    #server-container
+    {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+}
+
+#joysticks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/** .joystick and .joystick-inner */
+/* .joystick {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.joystick-inner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    border: 3px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} */
+
+.nipple {
+    overflow: visible !important;
+}

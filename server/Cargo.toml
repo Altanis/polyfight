@@ -1,0 +1,37 @@
+[package]
+name = "polyfight-server"
+version = "1.0.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rand = "0.8.5"
+strum = { version = "0.25", features = ["derive"] }
+bytes = "1.5.0"
+
+tokio = { version = "1.35.0", features = ["full"] }
+futures-util = "0.3.30"
+async-trait = "0.1.77"
+
+axum = { version = "0.7.3", features = ["ws"] }
+axum-extra = { version = "0.9.1", features = ["typed-header", "cookie"] }
+hyper = "1.1.0"
+bichannel = { version = "0.0.4", features = ["crossbeam"] }
+serde = { version = "1.0.201", features = ["derive"] }
+serde_json = "1.0.115"
+tower = "0.4.13"
+tower-http = { version = "0.5.2", features = ["cors"] }
+reqwest = "0.12.4"
+firebase-auth = { version = "0.4.3", features = ["axum"] }
+skillratings = { version = "0.27.0", features = ["serde"] }
+mysql = "25.0.1"
+chrono = "0.4.38"
+eliza = { git = "https://github.com/Altanis/eliza-rs" }
+
+[[bin]]
+name = "polyfight"
+path = "src/main.rs"
+
+[profile.release]
+debug = true

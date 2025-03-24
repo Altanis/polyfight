@@ -1,0 +1,761 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="500" height="500">
+  <defs>
+    <style xmlns="http://www.w3.org/1999/xhtml">
+      .sprite {
+        display: none;
+      }
+
+      .sprite:target {
+        display: inline;
+      }
+    </style>
+  </defs>
+  <g>
+    <g transform="translate(250,250)" id="Hackers' will be sent to the deans office." class="sprite">
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Square" class="sprite">
+      <g>
+        <path fill="rgb(255, 232, 105)" stroke="rgb(191, 174, 79)" paint-order="fill stroke markers" d=" M -100 -100 L 100 -100 L 100 100 L -100 100 L -100 -100 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+    </g>
+    <g transform="translate(250,250)" id="Triangle" class="sprite">
+      <g>
+        <path fill="rgb(252, 118, 119)" stroke="rgb(189, 89, 89)" paint-order="fill stroke markers" d=" M 0 -130 L 112.58330249197704 65 L -112.58330249197704 65 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+    </g>
+    <g transform="translate(250,250)" id="Crasher" class="sprite">
+      <g>
+        <path fill="rgb(241, 119, 221)" stroke="rgb(181, 89, 166)" paint-order="fill stroke markers" d=" M 0 -130 L 112.58330249197704 65 L -112.58330249197704 65 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+    </g>
+    <g transform="translate(250,250)" id="Crasher" class="sprite">
+      <g>
+        <path fill="rgb(241, 119, 221)" stroke="rgb(181, 89, 166)" paint-order="fill stroke markers" d=" M 0 -162.5 L 140.7291281149713 81.25 L -140.7291281149713 81.25 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+    </g>
+    <g transform="translate(250,250)" id="Pentagon" class="sprite">
+      <g>
+        <path fill="rgb(118, 141, 252)" stroke="rgb(89, 106, 189)" paint-order="fill stroke markers" d=" M 0 -100 L 95.10565162951535 -30.901699437494745 L 58.778525229247315 80.90169943749473 L -58.7785252292473 80.90169943749474 L -95.10565162951536 -30.901699437494734 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+    </g>
+    <g transform="translate(250,250)" id="Alpha Pentagon" class="sprite">
+      <g>
+        <path fill="rgb(118, 141, 252)" stroke="rgb(89, 106, 189)" paint-order="fill stroke markers" d=" M 0 -250 L 237.76412907378838 -77.25424859373686 L 146.9463130731183 202.25424859373683 L -146.94631307311826 202.25424859373686 L -237.7641290737884 -77.25424859373683 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+    </g>
+    <g transform="translate(250,250)" id="Basic Tank" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Twin" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,-53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Flank Guard" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(180,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Sniper" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="220" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="220" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Machine Gun" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -36.66666666666667 L 190 -73.33333333333334 L 190 73.33333333333334 L 0 36.66666666666667 L 0 -36.66666666666667 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Triple Shot" class="sprite">
+      <g transform="rotate(-45,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(45,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Quad Tank" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(90,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(180,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-90,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Twin Flank" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,-53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(180,0,0) translate(0,-53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(180,0,0) translate(0,53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Assassin" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="240" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="240" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Hunter" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="220" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="220" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-55" width="190" height="110" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-55" width="190" height="110" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Destroyer" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-68.33333333333334" width="190" height="136.66666666666669" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-68.33333333333334" width="190" height="136.66666666666669" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Gunner" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,-64)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-25" width="130" height="50" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-25" width="130" height="50" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,64)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-25" width="130" height="50" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-25" width="130" height="50" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,-34.66666666666667)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-25" width="170" height="50" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-25" width="170" height="50" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,34.66666666666667)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-25" width="170" height="50" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-25" width="170" height="50" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Triplet" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,-53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Penta Shot" class="sprite">
+      <g transform="rotate(-45,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(45,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-22.5,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(22.5,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="220" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="220" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Spread Shot" class="sprite">
+      <g transform="rotate(74.99999776570827,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="130" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="130" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-74.99999776570827,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="130" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="130" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(60.00000279622898,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="143.33333333333334" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="143.33333333333334" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-60.00000279622898,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="143.33333333333334" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="143.33333333333334" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(45.00000209717174,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="153.33333333333334" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="153.33333333333334" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-45.00000209717174,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="153.33333333333334" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="153.33333333333334" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(30.00000139811449,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="166.66666666666669" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="166.66666666666669" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-30.00000139811449,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="166.66666666666669" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="166.66666666666669" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(14.999999553141656,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="180" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="180" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-14.999999553141656,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-28.333333333333336" width="180" height="56.66666666666667" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-28.333333333333336" width="180" height="56.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Octo Tank" class="sprite">
+      <g transform="rotate(-45,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(45,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-134.9999948323593,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(134.9999948323593,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(180,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-90,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(90,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Triple Twin" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,-53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(119.99999986287999,0,0) translate(0,-53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(119.99999986287999,0,0) translate(0,53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-119.99999986287999,0,0) translate(0,-53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-119.99999986287999,0,0) translate(0,53.333333333333336)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Ranger" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="240" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="240" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -83.33333333333334 L 123.33333333333334 -41.66666666666667 L 123.33333333333334 41.66666666666667 L 0 83.33333333333334 L 0 -83.33333333333334 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Stalker" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -80 L 240 -40 L 240 40 L 0 80 L 0 -80 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Predator" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="220" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="220" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-55" width="190" height="110" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-55" width="190" height="110" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-68.33333333333334" width="160" height="136.66666666666669" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-68.33333333333334" width="160" height="136.66666666666669" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Streamliner" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="220" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="220" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="200" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="200" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="180" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="180" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="140" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="140" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="120" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="120" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Sprayer" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="220" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="220" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 190 -80 L 190 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Annihilator" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-95" width="190" height="190" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-95" width="190" height="190" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Tri-Angle" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(209.99999832764553,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(149.99994969479292,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Booster" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(134.99997191404748,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="140" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="140" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(224.99995319007917,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="140" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="140" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(209.99999832764553,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(149.99994969479292,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Fighter" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="190" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="190" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(90,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(-90,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(209.99999832764553,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(149.99994969479292,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="160" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="160" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Smasher" class="sprite">
+      <g transform="rotate(0,0,0)">
+        <path fill="rgb(79, 79, 79)" stroke="rgb(59, 59, 59)" paint-order="fill stroke markers" d=" M 114.99999999999999 0 L 114.99999999999999 0 L 57.50000000000001 99.59292143521043 L -57.499999999999964 99.59292143521044 L -114.99999999999999 1.408343819019456e-14 L -57.50000000000004 -99.5929214352104 L 57.50000000000001 -99.59292143521043 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Landmine" class="sprite">
+      <g transform="rotate(0,0,0)">
+        <path fill="rgb(79, 79, 79)" stroke="rgb(59, 59, 59)" paint-order="fill stroke markers" d=" M 114.99999999999999 0 L 114.99999999999999 0 L 57.50000000000001 99.59292143521043 L -57.499999999999964 99.59292143521044 L -114.99999999999999 1.408343819019456e-14 L -57.50000000000004 -99.5929214352104 L 57.50000000000001 -99.59292143521043 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0)">
+        <path fill="rgb(79, 79, 79)" stroke="rgb(59, 59, 59)" paint-order="fill stroke markers" d=" M 114.99999999999999 0 L 114.99999999999999 0 L 57.50000000000001 99.59292143521043 L -57.499999999999964 99.59292143521044 L -114.99999999999999 1.408343819019456e-14 L -57.50000000000004 -99.5929214352104 L 57.50000000000001 -99.59292143521043 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Spike" class="sprite">
+      <g transform="rotate(0,0,0)">
+        <path fill="rgb(79, 79, 79)" stroke="rgb(59, 59, 59)" paint-order="fill stroke markers" d=" M 130 0 L 130 0 L -64.99999999999997 112.58330249197704 L -65.00000000000006 -112.583302491977 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(90,0,0)">
+        <path fill="rgb(79, 79, 79)" stroke="rgb(59, 59, 59)" paint-order="fill stroke markers" d=" M 130 0 L 130 0 L -64.99999999999997 112.58330249197704 L -65.00000000000006 -112.583302491977 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(59.99999999999999,0,0)">
+        <path fill="rgb(79, 79, 79)" stroke="rgb(59, 59, 59)" paint-order="fill stroke markers" d=" M 130 0 L 130 0 L -64.99999999999997 112.58330249197704 L -65.00000000000006 -112.583302491977 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(29.999999999999996,0,0)">
+        <path fill="rgb(79, 79, 79)" stroke="rgb(59, 59, 59)" paint-order="fill stroke markers" d=" M 130 0 L 130 0 L -64.99999999999997 112.58330249197704 L -65.00000000000006 -112.583302491977 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Mega Smasher" class="sprite">
+      <g transform="rotate(0,0,0)">
+        <path fill="rgb(79, 79, 79)" stroke="rgb(59, 59, 59)" paint-order="fill stroke markers" d=" M 140 0 L 140 0 L 70.00000000000001 121.2435565298214 L -69.99999999999997 121.24355652982142 L -140 1.7145055188062946e-14 L -70.00000000000006 -121.24355652982138 L 70.00000000000001 -121.2435565298214 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Auto Gunner" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,-64)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-25" width="130" height="50" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-25" width="130" height="50" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,64)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-25" width="130" height="50" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-25" width="130" height="50" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,-34.66666666666667)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-25" width="170" height="50" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-25" width="170" height="50" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,34.66666666666667)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-25" width="170" height="50" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-25" width="170" height="50" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <g>
+          <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-33.333333333333336" width="106.66666666666667" height="66.66666666666667" />
+          <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-33.333333333333336" width="106.66666666666667" height="66.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 50 0 A 50 50 0 1 1 49.99997500000208 -0.04999999166669603" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+    </g>
+    <g transform="translate(250,250)" id="Overlord" class="sprite">
+      <g transform="rotate(90,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(-90,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(180,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Overseer" class="sprite">
+      <g transform="rotate(90,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(-90,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Manager" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Hybrid" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-68.33333333333334" width="190" height="136.66666666666669" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-68.33333333333334" width="190" height="136.66666666666669" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(180,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Trapper" class="sprite">
+      <g transform="rotate(0,0,0) translate(120,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 40 -80 L 40 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="120" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="120" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Tri-Trapper" class="sprite">
+      <g transform="rotate(0,0,0) translate(120,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 40 -80 L 40 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="120" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="120" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(119.99999999999999,0,0) translate(120,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 40 -80 L 40 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(119.99999999999999,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="120" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="120" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(239.99999999999997,0,0) translate(120,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 40 -80 L 40 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(239.99999999999997,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="120" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="120" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Gunner Trapper" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,-32)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-20" width="150" height="40" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-20" width="150" height="40" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(0,0,0) translate(0,32)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-20" width="150" height="40" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-20" width="150" height="40" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <g transform="rotate(180,0,0) translate(120,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -52 L 40 -104 L 40 104 L 0 52 L 0 -52 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(180,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-52" width="120" height="104" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-52" width="120" height="104" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Overtrapper" class="sprite">
+      <g transform="rotate(119.99999999999999,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(239.99999999999997,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(0,0,0) translate(120,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 40 -80 L 40 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="120" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="120" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Mega Trapper" class="sprite">
+      <g transform="rotate(0,0,0) translate(120,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -52 L 40 -104 L 40 104 L 0 52 L 0 -52 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-52" width="120" height="104" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-52" width="120" height="104" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Auto Trapper" class="sprite">
+      <g transform="rotate(0,0,0) translate(120,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 40 -80 L 40 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-40" width="120" height="80" />
+        <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-40" width="120" height="80" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <g>
+          <rect fill="rgb(153, 153, 153)" stroke="none" x="0" y="-33.333333333333336" width="106.66666666666667" height="66.66666666666667" />
+          <rect fill="none" stroke="rgb(115, 115, 115)" x="0" y="-33.333333333333336" width="106.66666666666667" height="66.66666666666667" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 50 0 A 50 50 0 1 1 49.99997500000208 -0.04999999166669603" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+    </g>
+    <g transform="translate(250,250)" id="Battleship" class="sprite">
+      <g transform="rotate(90,0,0) translate(0,40)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -56.66666666666667 L 150 -28.333333333333336 L 150 28.333333333333336 L 0 56.66666666666667 L 0 -56.66666666666667 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(90,0,0) translate(0,-40)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -56.66666666666667 L 150 -28.333333333333336 L 150 28.333333333333336 L 0 56.66666666666667 L 0 -56.66666666666667 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(270,0,0) translate(0,40)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -56.66666666666667 L 150 -28.333333333333336 L 150 28.333333333333336 L 0 56.66666666666667 L 0 -56.66666666666667 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(270,0,0) translate(0,-40)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -56.66666666666667 L 150 -28.333333333333336 L 150 28.333333333333336 L 0 56.66666666666667 L 0 -56.66666666666667 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <path fill="rgb(0, 177, 222)" stroke="rgb(0, 133, 167)" paint-order="fill stroke markers" d=" M 100 0 A 100 100 0 1 1 99.99995000000416 -0.09999998333339206" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+    </g>
+    <g transform="translate(250,250)" id="Necromancer" class="sprite">
+      <g transform="rotate(90,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 146.66666666666669 -80 L 146.66666666666669 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g transform="rotate(-90,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 146.66666666666669 -80 L 146.66666666666669 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g>
+        <rect fill="rgb(0, 177, 222)" stroke="none" x="-100" y="-100" width="200" height="200" />
+        <rect fill="none" stroke="rgb(0, 133, 167)" x="-100" y="-100" width="200" height="200" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+    </g>
+    <g transform="translate(250,250)" id="Factory" class="sprite">
+      <g transform="rotate(0,0,0) translate(0,0)">
+        <g transform="rotate(0,0,0)">
+          <path fill="rgb(153, 153, 153)" stroke="rgb(115, 115, 115)" paint-order="fill stroke markers" d=" M 0 -40 L 140 -80 L 140 80 L 0 40 L 0 -40 Z" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+        </g>
+      </g>
+      <g>
+        <rect fill="rgb(0, 177, 222)" stroke="none" x="-100" y="-100" width="200" height="200" />
+        <rect fill="none" stroke="rgb(0, 133, 167)" x="-100" y="-100" width="200" height="200" stroke-miterlimit="10" stroke-width="13.333333333333334" />
+      </g>
+    </g>
+  </g>
+</svg>

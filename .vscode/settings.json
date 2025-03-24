@@ -1,0 +1,33 @@
+{
+    "files.associations": {
+        "*.h": "c",
+        "*.lil": "powershell",
+        "*.tcc": "c",
+        "vector": "c",
+        "functional": "c",
+        "random": "c",
+        "chrono": "c",
+        "variant": "c",
+        "__locale": "c",
+        "typeinfo": "c",
+        "__bit_reference": "c",
+        "__node_handle": "c",
+        "atomic": "c",
+        "bitset": "c",
+        "cstddef": "c",
+        "__memory": "c",
+        "limits": "c",
+        "locale": "c",
+        "optional": "c",
+        "ratio": "c",
+        "system_error": "c",
+        "tuple": "c",
+        "type_traits": "c"
+    },
+    "rust-analyzer.linkedProjects": [
+        "./server/Cargo.toml",
+        "./server/Cargo.toml",
+        "./server/Cargo.toml"
+    ],
+    "rust-analyzer.showUnlinkedFileNotification": false,
+}

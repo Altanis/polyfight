@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha512/0.9.0/sha512.min.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
+        import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyBbR5yN4hLypajOsueT-vVrsgzZ1deDECg",
+            authDomain: "polyfight-2194d.firebaseapp.com",
+            projectId: "polyfight-2194d",
+            storageBucket: "polyfight-2194d.appspot.com",
+            messagingSenderId: "886791940438",
+            appId: "1:886791940438:web:ab0300c72d0962c3cfcef7",
+            measurementId: "G-GT6XWXDQ8X"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const provider = new GoogleAuthProvider();
+
+        window.app = app;
+        window.auth = auth;
+        window.provider = provider;
+        window.GoogleAuthProvider = GoogleAuthProvider;
+        window.onAuthStateChanged = onAuthStateChanged;
+        window.signInWithPopup = signInWithPopup;
+        window.signOut = signOut;
+    </script>
+
+    <meta name="title" content="Polyfight.io">
+    <meta name="description" content="Polyfight.io: 2D MMO tank shooter. Gain EXP by killing tanks, level up, upgrade stats, and compete in the FFA or 1v1 modes to climb the rankings!">
+    <meta name="keywords" content="polyfight.io, 2D MMO, shooting game, IO game, multiplayer, battle arena, online, PvP, tank, upgrades, strategy, bullet hell, shooter, team play, browser game, top-down, action-packed, competitive, power-ups, survival, skirmish, polygonal graphics, free-to-play, browser-based, real-time, arcade-style, intense battles, customizable tanks, multiplayer shooter, leaderboard, cooperative play, multiplayer shooter, tank battles, free online game, team strategy, top-down shooter, browser battle, mmo combat, skill-based gameplay, customizable tanks, competitive arena, action-packed battles, upgradable weapons, real-time strategy, bullet dodging, cooperative multiplayer, player versus player, arcade shooter, browser mmo, team deathmatch, battle royale, online gaming community, massive multiplayer online, intense action, fast-paced combat, power-ups galore, endless fun, io gaming, survival challenges">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="1 days">
+    <meta name="author" content="Altanis">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://polyfight.io/" />
+    <meta property="og:title" content="Polyfight.io" />
+    <meta property="og:description" content="Polyfight.io: 2D MMO tank shooter. Gain EXP by killing tanks, level up, upgrade stats, and compete in the FFA or 1v1 modes to climb the rankings!" />
+    <!-- <meta property="og:image" content="https://polyfight.io/assets/images/banner.png" /> -->
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://polyfight.io/" />
+    <meta property="twitter:title" content="Polyfight.io" />
+    <meta property="twitter:description" content="Polyfight.io: 2D MMO tank shooter. Gain EXP by killing tanks, level up, upgrade stats, and compete in the FFA or 1v1 modes to climb the rankings!" />
+    <!-- <meta property="twitter:image" content="https://polyfight.io/assets/images/banner.png" /> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas2svg@1.0.16/canvas2svg.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+    <title>Polyfight.io</title>
+</head>
+<body>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GT6XWXDQ8X"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GT6XWXDQ8X');
+    </script>
+
+    <canvas id="canvas"></canvas>
+
+    <div id="joystick-zone" style="display: block; top: 0; left: 0; width: 100%; height: 100%; position: absolute;"></div>
+
+    <canvas id="minimap_canvas"></canvas>
+    <canvas id="score_canvas"></canvas>
+    <canvas id="stats_canvas"></canvas>
+    <canvas id="upgrades_canvas"></canvas>
+
+    <div class="top-left">
+        <canvas id="scoreboard_canvas"></canvas>
+        <div id="game-buttons">
+            <div style="margin-top: 12px; display: grid; grid-template-columns: repeat(3, 1fr);">
+                <button class="menu-item game-button" id="clans">
+                    <?xml version="1.0" encoding="iso-8859-1"?>
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                         viewBox="0 0 28.832 28.832" xml:space="preserve">
+                    <g>
+                        <path style="fill:#ffffff;" d="M11.98,5.373c0-1.584,1.284-2.869,2.869-2.869s2.869,1.284,2.869,2.869s-1.284,2.869-2.869,2.869
+                            S11.98,6.957,11.98,5.373z M15.716,15.621c0.616-0.658,1.479-1.075,2.575-1.245c0.249-0.038,0.513-0.061,0.786-0.077
+                            c0.088-0.003,0.171-0.012,0.259-0.012h1.707c-1.253-0.521-2.141-1.761-2.141-3.203c0-0.575,0.143-1.12,0.394-1.596
+                            c-0.89-0.325-1.711-0.32-1.711-0.32h-5.753c-0.643,0.015-1.183,0.096-1.636,0.23c0.281,0.5,0.442,1.076,0.442,1.686
+                            c0,1.442-0.887,2.681-2.142,3.203h1.412c0.017-0.002,0.033-0.002,0.051-0.002c0.1,0,0.209,0.004,0.319,0.012
+                            c0.235,0.017,0.492,0.053,0.758,0.107c1.444,0.303,3.186,1.253,3.379,3.527l0.002,0.051v1.774h0.362l0.002-1.774
+                            C14.779,17.957,14.729,16.675,15.716,15.621z M6.993,13.983c1.582,0,2.869-1.287,2.869-2.871S8.575,8.243,6.993,8.243
+                            c-1.584,0-2.869,1.285-2.869,2.869C4.124,12.695,5.41,13.983,6.993,13.983z M9.728,14.908H3.976
+                            c-4.118,0.076-3.975,3.103-3.975,3.103L0,25.067h0.004c0,0.017-0.003,0.035-0.003,0.05c0,0.67,0.545,1.211,1.213,1.211
+                            c0.669,0,1.209-0.541,1.209-1.211c0-0.016-0.002-0.033-0.005-0.05h0.005v-6.532h0.758l-0.006,6.958l7.266,0.006l-0.006-6.996h0.786
+                            v6.563h0.004c0,0.003,0,0.006,0,0.01c0,0.669,0.541,1.211,1.207,1.211c0.669,0,1.211-0.542,1.211-1.211c0-0.004,0-0.007,0-0.01
+                            V18.01C13.378,14.861,9.728,14.908,9.728,14.908z M22.185,13.982c1.585,0,2.87-1.285,2.87-2.87s-1.285-2.87-2.87-2.87
+                            s-2.87,1.285-2.87,2.87C19.316,12.697,20.6,13.982,22.185,13.982z M24.921,14.908h-5.754c-4.119,0.076-3.973,3.103-3.973,3.103
+                            l-0.002,7.056h0.005c0,0.017-0.003,0.035-0.003,0.05c0,0.67,0.544,1.211,1.212,1.211c0.669,0,1.208-0.541,1.208-1.211
+                            c0-0.016-0.003-0.033-0.004-0.05h0.004v-6.532h0.76l-0.009,6.958l7.266,0.006l-0.006-6.996h0.786v6.563h0.002
+                            c0,0.003,0,0.006,0,0.01c0,0.669,0.542,1.211,1.21,1.211c0.667,0,1.209-0.542,1.209-1.211c0-0.004,0-0.007,0-0.01V18.01
+                            C28.57,14.861,24.921,14.908,24.921,14.908z"/>
+                    </g>
+                    </svg>
+                </button>
+                <button class="menu-item game-button" id="settings">
+                    <i class="fa-solid fa-cog" style="text-align: center;"></i>
+                </button>
+                <button class="menu-item game-button" id="level-up">
+                    <svg fill="#ffffff" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60.731 60.731" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <g> <polygon points="30.366,0 0.625,29.735 17.998,29.735 18.003,60.731 42.733,60.729 42.733,29.735 60.107,29.735 "></polygon> </g> </g> </g></svg>
+                </button>
+                <button class="menu-item game-button" id="switch-tank">
+                    <i class="fa-solid fa-repeat"></i>
+                </button>
+                <button class="menu-item game-button" id="godmode">
+                    <i class="fas fa-shield-alt"></i>
+                </button>
+                <button class="menu-item game-button" id="suicide">
+                    <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#ffffff" d="M241 16a15 15 0 0 0-15 15v60h-15a15 15 0 0 0-15 15v90a15 15 0 0 0 13.844 14.938C158.366 301.06 106 326.67 106 361c0 90 72.837 135 150 135s150-45 150-135c0-34.326-52.37-59.927-103.844-150.03A15 15 0 0 0 316 196v-90a15 15 0 0 0-15-15h-15V31a15 15 0 0 0-15-15h-30zm15 210c15 45 90 120 90 135 0 45-45.033 90-90 90-45.033 0-90-45-90-90 0-15 75-90 90-135z"></path></g></svg>
+                </button>
+                <button class="menu-item game-button" id="chat">
+                    <i class="fas fa-comment-alt"></i>
+                </button>
+                <button class="menu-item game-button" id="shooting-mode" style="display: flex; justify-content: center; align-items: center;">S</button>
+            </div>
+            <div class="notice" id="notice">
+                <div style="display: flex; justify-content: center; flex-direction: column; align-items: center; gap: 10px;">
+                    <span>
+                        Please check out the buttons above!
+                        They allow you to make/join clans and
+                        change your settings/colour scheme.
+                    </span>
+                    <button class="close-button" id="notice-close">Close</button>
+                </div>
+            </div>
+            <div id="ready-div" style="display: flex; flex-direction: row; gap: 5px; align-items: center;">
+                <span class="stroke">Ready?</span>
+                <input type="checkbox" id="ready-checkbox">
+            </div>
+        </div>
+    </div>
+
+    <div id="clan-modal" class="popout">
+        <div id="clan-modal-content">
+            <div id="clan-modal-header">
+                <span id="clan-close">X</span>
+                <h1 id="clan-modal-title" style="margin-bottom: 0px;">Clans</h2>
+            </div>
+            <div id="clan-modal-body">
+                <div id="clan-list">
+                    <div id="clan-entry">
+                        <span id="clan-name">Clan Name</span>
+                        <button id="clan-join">Join</button>
+                        <span id="clan-members">10 members</span>
+                    </div>
+                </div>
+                <div id="create-clan">
+                    <input id="clan-name-input" type="text" placeholder="Enter clan name..." maxlength="12">
+                    <button id="create-clan-button">Create Clan</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container show">
+        <div class="disconnected-elements">
+            <span id="disconnected-title" class="stroke">Polyfight.io</span>
+            <p id="disconnected-message">Connecting...</p>
+        </div>
+    
+        <div class="connected-elements">
+            <div id="menu">
+                <!-- <h1 id="game-title" class="stroke">Polyfight.io</h1> -->
+                <div id="server-container">
+                    <div id="mode-container">
+                        <button id="scoring" class="mode-button selected">Scoring</button>
+                        <button id="1v1" class="mode-button">1v1</button>
+                    </div>
+                    <div style="width: 100%;">
+                        <div id="scoring-menu">
+                            <div id="server-buttons">
+                                <div id="server-justifier">
+                                    <button id="new_server">New</button>
+                                    <button id="disconnect_server">Disconnect</button>
+                                    <button id="copy_link">Copy Link</button>
+                                </div>
+                            </div>
+                            <div id="servers"></div>
+                        </div>
+
+                        <div id="1v1-menu" style="display: none;">
+                            <div id="teams">
+                                <button id="set">
+                                    <b>Team Name</b>
+                                    <div id="tanks">
+                                        <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                        <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                        <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                        <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                        <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                        <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                    </div>
+                                </button>
+                                <div style="display: flex; justify-content: center; align-items: center; flex-direction: row;">
+                                    <b>Region: </b>
+                                    <select id="ranked-region">
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="play-scoring">
+                        <form onsubmit="return false;">
+                            <input type="text" id="name" placeholder="Enter Name" maxlength="15" required="required" autofocus>
+                        </form>
+                        <button class="play-with stroke" id="enter" style="background-color: #D36827; border: 3px solid rgba(0, 0, 0, 0.3);" onmouseover="this.style.boxShadow = '0px 0px 10px #D3682790'" onmouseout="this.style.boxShadow = ''">
+                            Play as guest
+                        </button>
+                        <button class="play-with stroke" id="google-signin" style="background-color: #A01748; border: 3px solid rgba(0, 0, 0, 0.3);" onmouseover="this.style.boxShadow = '0px 0px 10px #A0174890'" onmouseout="this.style.boxShadow = ''">
+                            Sign in with Google
+                        </button>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="utils-menu">
+                <button class="menu-item" id="stats">
+                    <i class="fa-solid fa-chart-simple" style="text-align: center;"></i>
+                </button>
+        
+                <button class="menu-item" id="leaderboard">
+                    <i class="fa-solid fa-trophy" style="text-align: center;"></i>
+                </button>
+        
+                <button class="menu-item" id="changelog">
+                    <i class="fa-solid fa-scroll" style="text-align: center;"></i>
+                </button>
+
+                <button class="menu-item" id="info">
+                    <i class="fa-solid fa-info" style="text-align: center;"></i>
+                </button>
+            </div>
+        
+            <div id="social-media-menu">
+                <button class="menu-item" id="discord" onclick="window.open('https://discord.gg/UTvaAAgku3')">
+                    <i class="fab fa-discord" style="text-align: center;"></i>
+                </button>
+            </div>
+        
+            <!-- modal in the middle which will be over everything -->
+            <div id="modal">
+                <div id="modal-content">
+                    <div id="modal-header">
+                        <span id="close">X</span>
+                        <h2 id="modal-title">null</h2>
+                    </div>
+                    <div id="modal-body"></div>
+                </div>
+            </div>
+
+            <div id="discord-modal">
+                <div id="discord-modal-content">
+                    <div id="discord-modal-header">
+                        <span id="discord-modal-close">X</span>
+                        <h2 id="modal-title">Discord Invite</h2>
+                    </div>
+                    <div id="discord-modal-body" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <span>Join our Discord server to chat with other players and get the latest updates!</span>
+                        <button id="discord-invite-button" onclick="window.open('https://discord.gg/UTvaAAgku3')">Join</button>
+
+                        <br>
+                        <br>
+                        <span>Also, watch the trailer for the game!</span>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/lOGujsmf3EQ?si=fwgkTe7OpNriG8tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="settings-modal">
+        <span id="settings-close" style="padding-right: 15px;">X</span>
+ 
+        <div id="settings-navbar">
+            <button class="nav-item selected" id="settings-theme">Theme</button>
+            <button class="nav-item" id="settings-config" style="display: none;">Configuration</button>
+            <!-- <button class="nav-item" id="settings-sound">Sound</button> -->
+            <!-- <button class="nav-item" id="settings-controls">Controls</button> -->
+            <!-- <button class="nav-item" id="settings-gameplay">Gameplay</button> -->
+        </div>
+
+        <div id="settings-body">
+            <div id="settings-theme-content" style="display: none;">
+                <div id="theme-settings">
+                    <select id="themes"></select>
+                    <input type="text" id="theme-name" placeholder="Theme Name">
+                    <button id="theme-new" class="stroke">New</button>
+                    <button id="theme-delete" class="stroke">Delete</button>
+                </div>
+
+                <div id="theme-buttons">
+                    <button id="theme-import" class="stroke">Import</button>
+                    <button id="theme-export" class="stroke">Export</button>
+                </div>
+
+                <div id="theme-colors"></div>
+            </div>
+            <div id="settings-config-content" style="display: none;">
+                <div id="config-options">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="stats-leaderboard-modal">
+        <span id="stats-leaderboard-close" style="padding-right: 15px;">X</span>
+
+        <div id="stats-leaderboard-categories">
+            <div class="stats-leaderboard-category">
+                <div style="text-align: center;">
+                    <span class="lb-category-header stroke">Drone Category</span>
+                    <span class="stroke" style="font-size: 24px;">(1300)</span>
+                </div>
+
+                <div style="display: flex; justify-content: center; align-items: center;">
+                    <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                    <img src="assets/images/spritesheet.svg#Overseer" height="60" width="60">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="trophy-leaderboard-modal">
+        <span id="trophy-leaderboard-close" style="padding-right: 15px;">X</span>
+
+        <div id="trophy-leaderboard-categories">
+            <div class="trophy-leaderboard-category" style="background-color: #D36827;">
+                <p class="lb-category-header stroke" style="text-align: center;">Drone Category</p>
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <span class="stroke">1. Altanis (3000)</span>
+                    <span class="stroke">2. —— (N/A)</span>
+                </div>
+            </div>
+            <div class="trophy-leaderboard-category" style="background-color: #D36827;">
+                <p class="lb-category-header stroke" style="text-align: center;">Drone Category</p>
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <span class="stroke">1. Altanis (3000)</span>
+                    <span class="stroke">2. —— (N/A)</span>
+                </div>
+            </div>
+            <div class="trophy-leaderboard-category" style="background-color: #D36827;">
+                <p class="lb-category-header stroke" style="text-align: center;">Drone Category</p>
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <span class="stroke">1. Altanis (3000)</span>
+                    <span class="stroke">2. —— (N/A)</span>
+                </div>
+            </div>
+            <div class="trophy-leaderboard-category" style="background-color: #D36827;">
+                <p class="lb-category-header stroke" style="text-align: center;">Drone Category</p>
+                <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <span class="stroke">1. Altanis (3000)</span>
+                    <span class="stroke">2. —— (N/A)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="teambuilder-modal">
+        <span id="teambuilder-close" style="padding-right: 15px;">X</span>
+
+        <div id="teambuilder-navbar">
+            <button class="nav-item selected">Teams</button>
+        </div>
+
+        <div id="teambuilder-body">
+            <div id="teambuilder-content">
+                <div id="team-buttons">
+                    <div id="teambuilder-teams-buttons" style="display: none;">
+                        <button id="team-new" class="stroke" style="margin-top: 0; margin-left: 10px;">New</button>
+                        <button id="team-import" class="stroke" style="margin-top: 0; margin-left: 10px; margin-right: 10px;">Import</button>
+                        <button id="team-export" class="stroke" style="margin-top: 0; margin-left: 10px;">Export</button>
+                    </div>
+                    <div id="teambuilder-teamedit-buttons">
+                        <button id="teamedit-import" class="stroke" style="margin-top: 0; margin-left: 10px; margin-right: 10px;">Import</button>
+                        <button id="teamedit-export" class="stroke" style="margin-top: 0; margin-left: 10px;">Export</button>
+                    </div>
+                </div>
+
+                <div>
+                    <div id="teambuilder-teams" style="display: none;">
+                        <div class="teambox" onmouseover="document.getElementById('teambox-icons').style.display = 'flex';" onmouseout="document.getElementById('teambox-icons').style.display = 'none';">
+                            <b>Team Name [SELECTED]</b>
+                            <div id="teambox-icons">
+                                <button class="teambox-icon" id="teambox-select">
+                                    <i class="fa-solid fa-check" style="text-align: center;"></i>
+                                </button>
+                                <button class="teambox-icon" id="teambox-delete">
+                                    <i class="fa-solid fa-trash" style="text-align: center;"></i>
+                                </button>
+                                <button class="teambox-icon" id="teambox-edit">
+                                    <i class="fa-solid fa-pencil" style="text-align: center;"></i>
+                                </button>
+                            </div>
+
+                            <div id="tanks">
+                                <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                                <img src="assets/images/spritesheet.svg#Overlord" height="60" width="60">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="teambuilder-edit">
+                        <input class="team-name-input" type="text" placeholder="Enter team name..." maxlength="12">
+
+                        <div class="team-tanks"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <input id="chat-input" type="text" placeholder="[Enter] to send, [Esc] to escape." spellcheck="false" autocomplete="off" tabindex="-1" />
+
+    <script src="./client.js" defer></script>
+</body>
+</html>

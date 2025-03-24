@@ -1,0 +1,43 @@
+{
+  "devDependencies": {
+    "@babel/plugin-transform-spread": "^7.24.1",
+    "@types/dat.gui": "^0.7.13",
+    "@types/jquery": "^3.5.30",
+    "@types/node": "^20.9.0",
+    "@types/sha.js": "^2.4.4",
+    "@types/webpack": "^5.28.5",
+    "javascript-obfuscator": "^4.1.0",
+    "ts-loader": "^9.5.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-obfuscator": "^3.5.1"
+  },
+  "dependencies": {
+    "@babel/core": "^7.24.4",
+    "dat.gui": "^0.7.9",
+    "dotenv": "^16.3.1",
+    "esprima": "^4.0.1",
+    "firebase": "^10.11.0",
+    "google-closure-compiler": "^20240317.0.0",
+    "js-confuser": "^1.7.1",
+    "js-sha512": "^0.9.0",
+    "nipplejs": "^0.10.2",
+    "terser": "^5.30.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "ws": "^8.16.0"
+  },
+  "name": "polyfight.io",
+  "version": "1.0.0",
+  "description": "A 2D MMO game.",
+  "main": "null",
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js && node obfuscator.js",
+    "serve": "npx serve views/public --no-clipboard",
+    "start:dev": "node shuffler.js && nodemon --exec \"npm run build && npm run serve\" --watch views --ext ts",
+    "start": "node shuffler.js && npm run build && npm run serve"
+  },
+  "author": "",
+  "license": "ISC"
+}

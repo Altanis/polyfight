@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+lib
+*/target
+target
+server/service.json
+server/tokens.txt
+server/database/users.db

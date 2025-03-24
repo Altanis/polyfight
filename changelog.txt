@@ -1,0 +1,92 @@
+July 22nd, 2024
+- Mobile support added.
+- Move around by moving the joystick on the left side of your screen.
+- Aim and shoot by moving the joystick on the right side of your screen.
+- Level up by pressing the Arrow Up button.
+- Switch tanks in permissive lobbies by pressing the Switch icon.
+- Enable god mode in permissive lobbies by pressing the Shield icon.
+- Kill yourself in permissive lobbies by pressing the Noose icon.
+- Press the Chat icon to open the chat, and press it again to send a message.
+- Toggle repelling/shooting mode by pressing the 
+
+July 9th, 2024
+- Chats are now multiline.
+- Members are now notified when clan owner leaves.
+- Pending status shown when attempting to join a clan.
+
+June 24th, 2024
+- Press L to lock mouse direction.
+
+June 21st, 2024
+- Necromancer has all its drones spawn at the start of a 1v1.
+- Shooting is disabled until a 1v1 starts.
+
+June 20th, 2024
+- 1v1 modes added!
+- Edit your 1v1 teams by pressing on the team in the 1v1 section.
+- Press the 1v1 section and get matched with someone.
+- When 1v1ing, you start with the first tank in your team.
+- When you die, you will respawn with the next tank in your team.
+- You lose when all tanks in your team are dead.
+- Each tank is associated with an ELO category displayed when editing your team.
+- When you win, you gain ELO. When you lose, you lose ELO (in the respective category).
+- View your ELO with the red Stats button on the homescreen.
+- View the top players in the yellow Trophy button on the homescreen.
+
+June 2nd, 2024
+- Background is now a spectator view of the center of the arena.
+- Last Man Standing mode can be enabled in Sandbox.
+- When enabled, there is a 30 second countdown before the game starts.
+- When the game starts, players will be unable to respawn.
+- The last player standing wins.
+- The game will restart when a winner is reached.
+
+June 1st, 2024
+- Spectator tank added (fast high FoV tank with no body/collisions).
+- Refactor Settings UI.
+- Switch tanks using the Backslash key.
+- Toggle god mode (in sandbox only) with the Semicolon key.
+- Commands have been added for sandboxes! Check Settings for more information.
+
+May 19th, 2024
+- UI Scale is now controllable in Settings.
+- New server selector.
+- Sandboxes can be created by pressing the New button in the server selector.
+- Hosts can configure sandbox settings by pressing Settings in the game.
+- Press \ to switch tanks.
+- Various bugfixes/mechanics/miscellaneous fixes.
+
+April 26th, 2024
+- Players on the leaderboard have their tanks displayed next to them.
+- Bugfixes and mechanics fixes.
+- Clans/VPNs are available to guest users temporarily.
+- Multiple simultaneous connections from the same IP are temporarily allowed.
+- The server's MSPT is now displayed next to your ping. MSPT greater than 16 is bad.
+
+April 22nd, 2024
+- Players can create themes. Press the Settings icon (gear) to create a theme.
+- Select the dropdown to switch between themes.
+- Change the name of the theme by typing into the namebox.
+- Themes can be imported/exported. Diep.style themes are supported for imports as well.
+
+April 11th, 2024
+- Players may now create clans! Press the \"Clans\" button ingame (button with people) to create/join a clan.
+- The creator of the clan is the owner.
+- Players may join a clan by requesting.
+- The owner of the clan will receive a notification and may accept/reject the join request.
+- Players in the clan will be unable to collide with eachother, and they cannot damage eachother with projectiles.
+- Dying does not kick you from the clan.
+- If the owner leaves, another player will inherit ownership.
+- The owner is free to kick any player at any time, as well as any player being able to leave.
+- Once a player leaves/gets kicked, all members of the clan will be notified and the player will be in the clan for 5 seconds.
+- Players may send a distress signal by clicking the minimap. All clan members will be notified.
+
+March 4th, 2024
+- Send a message by pressing Enter.
+- Press Esc to escape the textbox.
+
+February 19th, 2024
+- Shiny (green) and mythical (orange) shape variants may appear!
+
+February 12th, 2024
+- Press KeyT to t-bag!

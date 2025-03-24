@@ -1,0 +1,30 @@
+Controls
+- WASD/Arrow keys to move.
+- Mouse to aim and shoot.
+- Left click or press Space to shoot.
+- Right click or press Shift to repel (drone tanks only) or extend your FoV (predator only).
+- Press E to auto fire.
+- Press C to auto spin.
+- Press L to lock mouse direction.
+- Press T to start a t-bag.
+- Press Enter to chat.
+- Press K to level up.
+- Press U to preload 1 stat.
+- Press M to preload multiple stats.
+- Press \\ to switch tanks (in permisive lobbies).
+- Press ; to enable godmode (in permissive lobbies).
+- You may upgrade your stats by pressing digits.
+- Press the Social button to join/create clans (if you are logged in via Google).
+- Press Settings to change your theme.
+
+About
+- Polyfight.io is a 2D MMO game similar to other tank shooter games.
+- By killing tanks/shapes, you gain EXP. Enough EXP advances you up a level.
+- You can upgrade your stats in certain level intervals.
+- At level 15, 30, and 45, you may upgrade your tank.
+- The FFA mode is a free-for-all mode where you fight against everyone.
+- The 1v1 is a mode where you fight against one other player in a Sandbox.
+- Have fun!
+
+Credits
+- Thank you to Aspect, BlueCannonBall, Winfan, Sopur, and Nulled for their contributions to the development of Polyfight.io.
